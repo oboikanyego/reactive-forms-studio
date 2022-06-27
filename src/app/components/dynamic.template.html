@@ -1,0 +1,14 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <form [formGroup]="page.myForm">
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true" *ngFor="let input of page.userDetails">
+      <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="center center" [fxShow]="true"><label>
+          {{input.label}}:</label></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+          <input matInput type="{{input.type}}" placeholder="{{input.label}}" [required]="true" [formControlName]="input.id" id="{{input.id}}">
+
+        </mat-form-field><button mat-raised-button (click)="start()">Raised Button</button>
+      </div>
+    </div>
+  </form>
+</div>

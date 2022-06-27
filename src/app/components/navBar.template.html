@@ -1,0 +1,10 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" class="height60px" fxLayoutAlign="space-between stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true"><img imgSrc="/Web/images/deposit.jpg" alt="Image here" class="borderRadi80px"></div>
+    <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let item of page.nav"><button mat-raised-button color="accent">{{item}}</button></div>
+      </div>
+    </div>
+  </div>
+</div>

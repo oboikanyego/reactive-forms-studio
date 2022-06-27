@@ -1,0 +1,107 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+bh-home{
+    height: 100%;
+    width: 100%;
+}
+.heightfull,bh-navBar{
+    height: 100%;
+}
+.fullwidth{
+    width:100%
+}
+.height60px{
+    height: 60px;
+}
+img{
+    width: 40px;
+    height: 40px;
+}
+.backgroundgray{
+    background-color: darkslategray;
+}
+.backgroundgrey{
+    background-color: #e0e0e0;
+}
+.borderRadi80px{
+    border-radius: 80px;
+    border: white solid 1px;
+}
+.borderRadiBlack{
+    border: rgb(24, 23, 23) solid 1px;
+}
+.width95{
+    width: 95%;
+}
+ .mat-raised-button.mat-accent{
+     background-color: #e8eaf6 !important;
+ }
+ .font18px{
+     font-size: 18px;
+ }
+ .height80px{
+     height: 80px;
+ }
+ .bodyheight{
+    //  height: 40em;
+    // margin-top: 2em;
+    height: calc(100% - 60px - 20px - 10px);
+ }
+ .marginbody{
+     margin-top: 20px;
+    margin-bottom: 10px;
+ }
+
+ //input styles
+ .mat-form-field-appearance-outline .mat-form-field-wrapper .mat-form-field .mat-form-field-subscript-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.mat-form-field-subscript-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+  
+}
+.mat-form-field-infix {
+border-top: none !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+      padding: 0 !important;
+    margin: 0 !important;
+        margin-left: 10px !important;
+  
+}
+.mat-form-field-flex {
+    display: inline-flex !important;
+    align-items: center !important;
+    box-sizing: border-box;
+    width: 100%;
+}
+ .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+    display: inline-flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    font-size: 14px !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 5px;
+    }
+.mat-form-field-appearance-outline .mat-form-field-flex {
+    /* padding: 0 0.75em 0 0.75em; */
+    /* margin-top: -0.25em; */
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+}
+.mat-form-field-flex {
+    height: 42px;
+    width: 35em !important;
+}
+.mat-form-field-wrapper {
+    padding:0;
+}
+.mat-raised-button{
+    background-color: #e8eaf6 !important;
+}

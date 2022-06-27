@@ -1,0 +1,25 @@
+<div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" fxFill>
+  <div fxLayout="row wrap" class="backgroundgray" fxLayoutAlign="center stretch" [fxShow]="true">
+    <bh-navBar class="width95"></bh-navBar>
+  </div>
+  <div fxLayout="row wrap" class="backgroundgrey marginbody bodyheight" fxLayoutAlign="center stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="width95" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" class="height80px borderRadiBlack fullwidth" fxLayoutAlign="space-evenly center" [fxShow]="true">
+        <div fxLayout="column wrap" class="borderRadiBlack backgroundgrey" fxFlex="19" fxLayoutAlign="center center" [fxShow]="true" *ngFor="let item of page.labels,let i =index">
+          <h3 class="font18px">
+            {{item}}
+          </h3>
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="fullwidth" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="column wrap" class="fullwidth" fxLayoutAlign="start stretch" [fxShow]="true">
+          <bh-dynamic class="fullwidth"></bh-dynamic>
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="fullwidth" fxLayoutGap="4px" fxLayoutAlign="center center" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button>Back</button></div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true"><button mat-raised-button>Next</button></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<form>
+  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+    <input matInput placeholder="Input" [required]="false">
+
+  </mat-form-field>
+  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+    <mat-select placeholder="Select" [required]="false">
+      <ng-template ngFor let-option [ngForOf] let-i="index">
+        <mat-option [value]></mat-option>
+      </ng-template>
+    </mat-select>
+
+  </mat-form-field>
+  <mat-form-field [appearance]="&apos;legacy&apos;">
+    <input matInput placeholder="Date Picker" [matDatepicker]="picker" [required]="false" [disabled]="false">
+    <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+    <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+  </mat-form-field>
+  <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+    <input matInput placeholder="Input" [required]="false">
+
+  </mat-form-field>
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-radio-group [required]="false">
+      <mat-radio-button [required]="false"></mat-radio-button>
+      <mat-radio-button [required]="false"></mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <mat-form-field>
+    <textarea matInput placeholder="Text Area" [required]="false"></textarea>
+  </mat-form-field>
+  <div fxLayout="column">
+    <table mat-table class="table-width-fix">
+
+      <tr mat-row *matRowDef="let row; columns: [&apos;index&apos;];"></tr>
+
+      <ng-container matColumnDef="index">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let table; let i = index;"></td>
+      </ng-container>
+    </table>
+  </div>
+  <button mat-raised-button>Raised Button</button>
+</form>
